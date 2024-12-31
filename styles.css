@@ -1,78 +1,116 @@
-/* 全体設定 */
+/* ベーススタイル */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* ヘッダー */
-.header-container {
-    text-align: center;
-    padding: 2rem;
-    background-color: #007acc;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ナビゲーションバー */
+.header {
+    background-color: #001f3f;
     color: white;
 }
 
-.header-container .logo img {
-    max-width: 150px;
-    margin-bottom: 1rem;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
-/* メインセクション */
-main {
-    padding: 2rem;
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
 }
 
-.about-section,
-.features-section,
-.join-section {
-    margin-bottom: 3rem;
+.nav-links a {
+    color: white;
+    font-weight: 500;
 }
 
-h1, h2, h3 {
-    color: #005fa3;
+.nav-cta {
+    background-color: #ff851b;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
+.nav-cta:hover {
+    background-color: #e0731b;
+}
+
+/* ヒーローセクション */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #001f3f, #0056b3);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #ff851b;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0731b;
+}
+
+/* 特徴セクション */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 2rem;
 }
 
 .feature-item {
     background: white;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .feature-item h3 {
     margin-top: 0;
-}
-
-/* ボタン */
-.join-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background: #007acc;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.join-button:hover {
-    background: #005fa3;
+    color: #0056b3;
 }
 
 /* フッター */
-.footer-container {
+.footer {
     text-align: center;
-    padding: 1rem;
-    background: #005fa3;
+    padding: 1rem 0;
+    background: #001f3f;
     color: white;
 }
