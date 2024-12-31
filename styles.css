@@ -1,56 +1,67 @@
+/* 全体設定 */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6);
     color: #333;
 }
 
-header {
+/* ヘッダー */
+.header-container {
+    text-align: center;
+    padding: 2rem;
     background-color: #007acc;
     color: white;
-    padding: 1rem 0;
-    text-align: center;
 }
 
-header .logo img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto 1rem;
+.header-container .logo img {
+    max-width: 150px;
+    margin-bottom: 1rem;
 }
 
+/* メインセクション */
 main {
     padding: 2rem;
 }
 
-h1, h2 {
-    color: #007acc;
+.about-section,
+.features-section,
+.join-section {
+    margin-bottom: 3rem;
 }
 
-.about, .features, .join {
-    margin-bottom: 2rem;
+h1, h2, h3 {
+    color: #005fa3;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
-ul li {
-    background: #e3e3e3;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 5px;
+.feature-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.feature-item h3 {
+    margin-top: 0;
+}
+
+/* ボタン */
 .join-button {
     display: inline-block;
+    padding: 0.8rem 1.5rem;
     background: #007acc;
     color: white;
-    padding: 0.8rem 1.2rem;
-    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
@@ -58,9 +69,10 @@ ul li {
     background: #005fa3;
 }
 
-footer {
+/* フッター */
+.footer-container {
     text-align: center;
-    padding: 1rem 0;
-    background: #007acc;
+    padding: 1rem;
+    background: #005fa3;
     color: white;
 }
