@@ -7,17 +7,18 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #ff9e9e, #fffbab, #afffbc);  /* 明るくカラフルなグラデーション背景 */
-    color: #333;
+    background: url('game-background.jpg') center/cover no-repeat;  /* ゲーム背景画像 */
+    color: white;
     line-height: 1.6;
     padding: 20px;
     overflow-x: hidden;
-    animation: backgroundAnimation 10s infinite alternate; /* 背景の色のアニメーション */
+    background-attachment: fixed;
+    animation: backgroundAnimation 15s infinite alternate; /* 背景の色のアニメーション */
 }
 
 /* ヘッダー */
 header {
-    background-color: rgba(255, 115, 90, 0.8);  /* 半透明のオレンジ色 */
+    background-color: rgba(0, 0, 0, 0.7);  /* 半透明の黒背景 */
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -43,7 +44,7 @@ section {
     text-align: center;
     margin: 20px 0;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);  /* 白い背景で明るく */
+    background-color: rgba(0, 0, 0, 0.5);  /* 半透明の黒背景 */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(30px);
     opacity: 0;
