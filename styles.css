@@ -7,53 +7,64 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fffbf5;  /* 明るいクリーム色 */
+    background: linear-gradient(45deg, #ff9e9e, #fffbab, #afffbc);  /* 明るくカラフルなグラデーション背景 */
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    overflow-x: hidden;
+    animation: backgroundAnimation 10s infinite alternate; /* 背景の色のアニメーション */
 }
 
 /* ヘッダー */
 header {
-    background-color: #ff7f50;  /* 明るいオレンジ色 */
+    background-color: rgba(255, 115, 90, 0.8);  /* 半透明のオレンジ色 */
     color: white;
     padding: 50px 20px;
     text-align: center;
     border-radius: 10px;
+    animation: slideInFromTop 1s ease-out;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* 見出しに軽い影を追加 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 見出しの影 */
+    animation: fadeIn 2s ease-in-out;
 }
 
 header p {
     font-size: 1.4em;
+    animation: fadeIn 2.5s ease-in-out;
 }
 
 /* セクション */
 section {
     padding: 40px 20px;
     text-align: center;
-    background-color: #ffecb3;  /* 明るい黄色 */
     margin: 20px 0;
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);  /* 白い背景で明るく */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 1.5s ease-out forwards;
 }
 
+/* 見出し */
 section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, #ff6b6b, #ffec3d);  /* グラデーション背景 */
+    background: linear-gradient(90deg, #ff6b6b, #ffec3d);
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* 見出しに影 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* 見出しの影 */
+    animation: bounceIn 1s ease;
 }
 
 /* Discordボタン */
 .discord-button {
     display: inline-block;
-    background: linear-gradient(45deg, #ff7f50, #ff9f00, #6a1b9a);  /* 鮮やかなグラデーション */
+    background: linear-gradient(45deg, #ff7f50, #ff9f00, #6a1b9a);  /* カラフルなグラデーション */
     color: white;
     font-size: 1.5em;
     padding: 15px 30px;
@@ -62,10 +73,11 @@ section h2 {
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* ボタンに影 */
     margin-top: 20px;
+    animation: pulse 1.5s infinite alternate; /* ボタンにアニメーション */
 }
 
 .discord-button:hover {
-    transform: scale(1.05);  /* ホバー時に拡大 */
+    transform: scale(1.1); /* ホバー時に拡大 */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  /* ホバー時に影を強調 */
 }
 
@@ -77,6 +89,60 @@ footer {
     text-align: center;
     border-radius: 10px;
     margin-top: 40px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
 }
 
 /* レスポンシブデザイン */
