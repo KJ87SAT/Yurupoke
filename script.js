@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const joinButton = document.querySelector('.discord-button');
-    
+    const joinButton = document.getElementById('joinButton');
     joinButton.addEventListener('click', () => {
-        alert("Discordサーバーに参加してくれてありがとう！楽しんでね！");
+        const inviteLink = 'https://discord.com/invite/example';
+        alert('参加リンクにリダイレクトします: ' + inviteLink);
+        window.location.href = inviteLink;
     });
+
+    console.log('Script loaded successfully. All interactions are ready.');
 });
