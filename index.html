@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポケポケファンDiscordサーバー紹介</title>
+    <title>ポケポケファンサーバー | ホーム</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="ポケポケファンサーバーロゴ">
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="ポケポケロゴ">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">概要</a></li>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#join">参加</a></li>
+            </ul>
+            <button class="nav-cta">今すぐ参加</button>
+        </nav>
+        <div class="hero-section">
+            <h1>ポケポケファンDiscordサーバー</h1>
+            <p>ポケポケの世界をもっと楽しむためのコミュニティ。</p>
+            <button class="cta-button">参加する</button>
         </div>
-        <h1>ポケポケファンDiscordサーバーへようこそ！</h1>
     </header>
     <main>
-        <section class="about">
+        <section id="about" class="about-section">
             <h2>サーバー概要</h2>
-            <p>ポケポケを愛するプレイヤーたちのためのコミュニティサーバーです！ここでは、デッキ構築の相談やバトル攻略、カードのトレード計画など、さまざまな交流が楽しめます。</p>
+            <p>ポケポケを愛するプレイヤーが集う場所。初心者から上級者まで大歓迎です。</p>
         </section>
-        <section class="features">
+        <section id="features" class="features-section">
             <h2>特徴</h2>
-            <ul>
-                <li>ポケポケの最新情報をいち早く共有！</li>
-                <li>デッキ戦略やバトルリプレイの分析もOK！</li>
-                <li>フレンドマッチの相手探しも簡単！</li>
-                <li>カードトレードの相談や価値観の共有スペースも！</li>
-            </ul>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>最新情報</h3>
+                    <p>ポケポケのアップデートやイベントをいち早くお届け。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>戦略共有</h3>
+                    <p>デッキ構築やバトル戦術をみんなでシェア。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>フレンドマッチ</h3>
+                    <p>簡単に対戦相手を見つけられます。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>カードトレード</h3>
+                    <p>トレードの相談や価値観を共有できるスペース。</p>
+                </div>
+            </div>
         </section>
-        <section class="join">
-            <h2>参加方法</h2>
-            <p>以下のボタンから参加できます！初心者から上級者まで大歓迎です。</p>
-            <button class="join-button" id="joinButton">Discordサーバーに参加</button>
+        <section id="join" class="join-section">
+            <h2>サーバーに参加しよう！</h2>
+            <p>一緒にポケポケを楽しみましょう。今すぐ参加してください！</p>
+            <button class="join-button">Discordに参加</button>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 ポケポケファンサーバー All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 ポケポケファンサーバー All Rights Reserved.</p>
     </footer>
 </body>
 </html>
