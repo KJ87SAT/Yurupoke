@@ -7,17 +7,17 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7a18, #af002d, #318bfb);  /* グラデーション背景 */
-    color: white;
+    background-color: #fffbf5;  /* 明るいクリーム色 */
+    color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
 /* ヘッダー */
 header {
-    background: rgba(0, 0, 0, 0.6);  /* 半透明の背景 */
+    background-color: #ff7f50;  /* 明るいオレンジ色 */
     color: white;
-    padding: 40px 0;
+    padding: 50px 20px;
     text-align: center;
     border-radius: 10px;
 }
@@ -25,44 +25,42 @@ header {
 header h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* 見出しの影 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* 見出しに軽い影を追加 */
 }
 
 header p {
     font-size: 1.4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* 見出しの影 */
 }
 
 /* セクション */
 section {
     padding: 40px 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* セクションの背景に透過効果 */
-    border-radius: 10px;
+    background-color: #ffecb3;  /* 明るい黄色 */
     margin: 20px 0;
+    border-radius: 10px;
 }
 
-/* 見出し */
 section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, #ff00ff, #ff9a8b);  /* グラデーション背景 */
+    background: linear-gradient(90deg, #ff6b6b, #ffec3d);  /* グラデーション背景 */
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* 見出しの影 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* 見出しに影 */
 }
 
 /* Discordボタン */
 .discord-button {
     display: inline-block;
-    background: linear-gradient(45deg, #ff6b6b, #f7b7a3, #8f68e8);  /* ボタンのグラデーション */
+    background: linear-gradient(45deg, #ff7f50, #ff9f00, #6a1b9a);  /* 鮮やかなグラデーション */
     color: white;
     font-size: 1.5em;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* ボタンに影をつける */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* ボタンに影 */
     margin-top: 20px;
 }
 
@@ -73,7 +71,7 @@ section h2 {
 
 /* フッター */
 footer {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: #fbc02d;  /* 明るい黄色 */
     color: white;
     padding: 20px 0;
     text-align: center;
